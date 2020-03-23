@@ -71,8 +71,7 @@ class Transaksi
 
         //masukkan data transaksi
         $query = $this->db->prepare("INSERT INTO transaksi VALUES
-        ('$id_transaksi',$id_outlet,
-        '','$id_member','$tgl','$batas_waktu','','','','','baru',
+        ('$id_transaksi',$id_outlet,'','$id_member','$tgl','$batas_waktu','','','','','baru',
         'belum dibayar','$id_user')");
         $query->execute();
 
